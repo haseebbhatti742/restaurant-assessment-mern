@@ -1,0 +1,68 @@
+.main {
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .logo_section {
+    width: 25%;
+
+    img {
+      height: 40px;
+    }
+  }
+
+  .list_section {
+    width: 50%;
+    display: flex;
+    align-content: center;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        display: inline;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 1.5vw;
+        margin-left: 5px;
+        margin-right: 10px;
+      }
+
+      .active {
+        text-decoration: underline;
+        text-decoration-color: yellow;
+      }
+    }
+  }
+
+  .options_section {
+    width: 25%;
+    padding: 0 25px 0 25px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .cart {
+      width: 30%;
+
+      img {
+        height: 35px;
+      }
+    }
+
+    .login {
+      width: 70%;
+
+      .loginButton {
+        background-color: #fdc913;
+        border-radius: 20px;
+        padding: 10px 25px 10px 25px;
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        font-size: larger;
+      }
+    }
+  }
+}
