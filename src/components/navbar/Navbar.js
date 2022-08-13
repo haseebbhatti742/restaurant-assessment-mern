@@ -21,7 +21,9 @@ function Navbar() {
           <img src={CartLogo} alt="Cart Logo" />
         </div>
         <div className={classes["login"]}>
-          <div className={classes["loginButton"]}>Login</div>
+          <div className={`bg-yellow-primary py-2 rounded-2xl text-center`}>
+            Login
+          </div>
         </div>
       </div>
     </div>
