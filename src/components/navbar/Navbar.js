@@ -55,9 +55,13 @@ function Navbar() {
             onClick={() => setDisplayCartPanel(true)}
           >
             <img src={CartLogo} alt="Cart Logo" />
-            <span className="absolute top-0 right-0 bg-red-600 text-white font-semibold rounded-full px-2">
-              {cartItems?.length}
-            </span>
+            {cartItems?.length > 0 ? (
+              <span className="absolute top-0 right-0 bg-red-600 text-white font-semibold rounded-full px-2">
+                {cartItems?.length}
+              </span>
+            ) : (
+              <></>
+            )}
           </div>
           <div
             className={`bg-yellow-primary py-2 rounded-2xl text-center w-32 text-xl`}
