@@ -1,9 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import {
-  CART_DATA_STORAGE_KEY,
-  URL_CATEGORIES,
-  URL_CONTACT,
-} from "../constants/constants";
+import { URL_CATEGORIES, URL_CONTACT } from "../constants/constants";
 import {
   getCartItemsFromStorage,
   setCartItemsToLocalStorage,
@@ -80,7 +76,7 @@ function AppContextContainer({ children }) {
   const handleIncrementQuantity = (state) => {
     setCartItems((prev) => {
       let newState = [...prev];
-      const found = newState.findIndex((item) => item?.id == state?.id);
+      const found = newState.findIndex((item) => item?.id === state?.id);
       if (found !== -1) newState[found].quantity = newState[found].quantity + 1;
       return newState;
     });
@@ -89,7 +85,7 @@ function AppContextContainer({ children }) {
   const handleDecrementQuantity = (state) => {
     setCartItems((prev) => {
       let newState = [...prev];
-      const found = newState.findIndex((item) => item?.id == state?.id);
+      const found = newState.findIndex((item) => item?.id === state?.id);
       if (found !== -1 && newState[found].quantity > 1)
         newState[found].quantity = newState[found].quantity - 1;
       return newState;

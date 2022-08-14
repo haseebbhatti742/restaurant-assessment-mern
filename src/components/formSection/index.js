@@ -5,7 +5,8 @@ import TextSection from "./TextSection";
 function FormSection() {
   return (
     <div
-      className="flex flex-col md:flex-row bg-gray-background rounded-2xl justify-between py-10"
+      className="flex flex-col md:flex-row bg-gray-background rounded-2xl justify-between py-2"
+      style={{ fontFamily: "Manrope" }}
       id="form"
     >
       <div className="w-full md:w-3/5 flex items-center">

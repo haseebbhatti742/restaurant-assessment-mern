@@ -1,7 +1,6 @@
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Tab, Tabs, TabList } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { useAppContext } from "../../context/AppContextContainer";
-import CategoriesList from "./CategoriesList";
 
 function CategoriesTab() {
   const { categories, setSelectedCategory } = useAppContext();
@@ -15,8 +14,13 @@ function CategoriesTab() {
               setSelectedCategory(category?.slug);
             }}
           >
-            <span className="flex">
-              <img src={category?.icon} className="w-4 mr-2" /> {category?.name}
+            <span className="flex ">
+              <img
+                src={category?.icon}
+                className="w-8 mr-2"
+                alt={category?.id}
+              />
+              <p className="text-lg">{category?.name}</p>
             </span>
           </Tab>
         ))}

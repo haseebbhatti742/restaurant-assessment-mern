@@ -9,8 +9,7 @@ import useWindowSize from "../../hooks/useWindowsDimension";
 import Loader from "../loader/Loader";
 
 function CategoriesList() {
-  const { categoriesData, categoriesDataLoading, addToCart, cartItems } =
-    useAppContext();
+  const { categoriesData, categoriesDataLoading, addToCart } = useAppContext();
   const { isMobile } = useWindowSize();
 
   const handleCartInsert = (state) => {

@@ -8,7 +8,7 @@ function Contacts() {
 
   return (
     <div>
-      <div className="flex justify-center py-6 md:py-16 flex-col md:flex-row mb-2">
+      <div className="flex justify-center mt-36 md:mt-0 mx-20 py-6 md:py-12 flex-col md:flex-row mb-2">
         {contactsLoading ? (
           <Loader />
         ) : (

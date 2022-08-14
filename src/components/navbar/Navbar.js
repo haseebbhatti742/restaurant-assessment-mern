@@ -8,9 +8,9 @@ function Navbar() {
   const { cartItems } = useAppContext();
   const [displayCartPanel, setDisplayCartPanel] = useState(false);
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-gray-background px-20 py-14 relative">
+    <nav className="navbar navbar-expand-lg navbar-light bg-gray-background pl-20 pr-36 py-16 relative">
       <div>
-        <img src={Logo} alt="Logo" className="w-28" />
+        <img src={Logo} alt="Logo" className="w-32" />
       </div>
       <button
         className="navbar-toggler"
@@ -24,9 +24,12 @@ function Navbar() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav m-auto ">
+        <ul className="navbar-nav m-auto flex justify-evenly w-96">
           <li className="nav-item active text-xl ">
-            <a className="nav-link" href="#">
+            <a
+              className="nav-link border-b-yellow-primary border-b-2"
+              href="#home"
+            >
               Home <span className="sr-only">(current)</span>
             </a>
           </li>
@@ -52,12 +55,12 @@ function Navbar() {
             onClick={() => setDisplayCartPanel(true)}
           >
             <img src={CartLogo} alt="Cart Logo" />
-            <span className="absolute top-0 right-0 bg-red-600 text-white rounded-full px-1">
+            <span className="absolute top-0 right-0 bg-red-600 text-white font-semibold rounded-full px-2">
               {cartItems?.length}
             </span>
           </div>
           <div
-            className={`bg-yellow-primary py-2 rounded-2xl text-center w-32`}
+            className={`bg-yellow-primary py-2 rounded-2xl text-center w-32 text-xl`}
           >
             Login
           </div>

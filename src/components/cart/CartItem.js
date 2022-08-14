@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useAppContext } from "../../context/AppContextContainer";
 
 function CartItem({ item }) {
@@ -7,7 +7,7 @@ function CartItem({ item }) {
   return (
     <div className="mb-3 flex items-center ">
       <div>
-        <img src={item?.image} className="w-20  h-20" />
+        <img src={item?.image} alt={item?.id} className="w-20  h-20" />
         <span
           className="text-red-primary underline text-sm cursor-pointer"
           onClick={() => removeFromCart(item)}
