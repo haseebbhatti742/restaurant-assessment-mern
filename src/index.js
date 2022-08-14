@@ -7,11 +7,11 @@ import AppContextContainer from "./context/AppContextContainer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <AppContextContainer>
-      <App />
-    </AppContextContainer>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <AppContextContainer>
+    <App />
+  </AppContextContainer>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

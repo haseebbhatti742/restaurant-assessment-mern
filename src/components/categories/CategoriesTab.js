@@ -22,11 +22,11 @@ function CategoriesTab() {
         ))}
       </TabList>
 
-      {categories?.map((category) => (
+      {/* {categories?.map((category) => (
         <TabPanel key={category?.id}>
           <CategoriesList />
         </TabPanel>
-      ))}
+      ))} */}
     </Tabs>
   );
 }
